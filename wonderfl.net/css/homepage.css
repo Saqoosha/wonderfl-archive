@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/* ----------------------------------------------
+
+	JSdoit / homepage STYLE
+	author   : (C)KAYAC http://www.kayac.com/
+
+---------------------------------------------- */
+
+#content {
+	border-top: none;
+}
+#main section {
+	margin: 0 0 40px;
+}
+.unitCodeGroup {
+	width: 785px;
+}
+.unitCode {
+	margin: 0 50px 0 0;
+}
+
+/* --------------------------------------------------
+	1. Front Guide
+-------------------------------------------------- */
+
+#boxFrontGuide {
+	margin: 0 0 50px;
+}
+#boxFrontGuide #boxIndexSWF {
+	height: 322px;
+	background: url(/img/homepage/bg_index_swf.jpg) no-repeat 0 0;
+}
+#boxFrontGuide .boxFrontGuideClose {
+	width: 950px;
+	height: 34px;
+	background: url(/img/homepage/bg_front_guide.png) no-repeat 0 0;
+}
+#boxFrontGuide .boxFrontGuideClose p#btnBuildScratch {
+	float: left;
+	width: 259px;
+	padding: 3px 0 0 12px;
+}
+#boxFrontGuide .boxFrontGuideClose p#btnGuideOpen {
+	float: right;
+	width: 201px;
+	padding: 10px 10px 0 0;
+}
+#boxFrontGuide .boxFrontGuideClose p a {
+	outline: none;
+}
+/* Title
+----------------------------------- */

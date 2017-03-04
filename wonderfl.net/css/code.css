@@ -1,0 +1,806 @@
+@charset "utf-8";
+
+/* ----------------------------------------------
+
+	JSdoit / code STYLE
+	author   : (C)KAYAC http://www.kayac.com/
+
+---------------------------------------------- */
+
+/* ----------------------------------------------
+
+ Show Detail
+
+---------------------------------------------- */
+
+#content header {
+	position: relative;
+	padding: 0 0 20px;
+	background: url(../img/common/bdr/bdr_3-4x1.png) repeat-x 0 100%;
+	margin-top:15px;
+}
+
+
+/* Parent
+---------------------------------------------- */
+.code #parentsCode {
+    margin-top:35px;
+}
+#boxForked {
+	float: left;
+	width: 550px;
+	padding-top: 5px;
+	color: #988484;
+	text-decoration: none;
+	font-size: 93%;
+	word-wrap: break-word;
+}
+#boxForked a:hover {
+    color:#FF0000;
+}
+#boxForked .user a {
+	color: #F00;
+}
+#boxForked dl {
+}
+#boxForked dl dt {
+	font-weight: bold;
+}
+#boxForked dl dt,
+#boxForked dl dd {
+	display: inline;
+}
+#boxForked p.diff {
+	margin-left: 50px;
+	padding: 10px 0 10px 25px;
+	background: url(../img/code/icon_forked.png) no-repeat 0 0;
+}
+.boxCodeInner {
+	position: relative;
+	height: 100%;
+}
+
+
+
+/* Share
+---------------------------------------------- */
+.code {
+    position:relative;
+}
+.boxShare {
+	position: absolute;
+	right:0;
+	padding: 10px 0 0px;
+}
+.boxShare dl.listBoxShare {
+}
+.boxShare dl.listBoxShare dt {
+	float: left;
+	margin: 0 4px;
+}
+.boxShare dl.listBoxShare dt.sns {
+	color: #F00;
+	padding-left: 14px;
+	background: url(../img/common/ico/ico_add.png) no-repeat 0 50%;
+}
+.boxShare dl.listBoxShare dd {
+	float: left;
+	margin: 0 8px 0 0;
+}
+.boxShare dl.listBoxShare dd.embed input {
+	width: 130px;
+	padding: 1px 2px;
+	background: #EEE;
+	border: 1px solid #DDD;
+	color: #777;
+	font-size: 85%;
+}
+.boxShare dl.listBoxShare dd.sns a {
+	margin: 0 4px 0 0;
+}
+.boxShare dl.listBoxShare dd.shareFb {
+    margin-left:-15px;
+}
+
+/* Header Information
+---------------------------------------------- */
+
+article.code .headerInfo {
+	position: relative;
+	width: 100%;
+	clear:both;
+	overflow:hidden;
+	padding-top:20px;
+}
+#content article.code .headerInfo h1 {
+	padding: 25px 170px 5px 0;
+	background: url(../img/common/bdr/bdr_3-4x1.png) repeat-x 0 0;
+	font-size: 28px;
+	font-weight: bold;
+	word-wrap: break-word;
+	clear:both;
+}
+#content article.code .headerInfo .description {
+    border:1px solid #ccc;
+	padding:5px;
+	margin-bottom:8px;
+	font-family:monospace;
+	font-size:93%;
+	background:#f5f5f5;
+}
+article.code .headerInfo .btnAddFav {
+	position: absolute;
+	top: 46px;
+	right: 0;
+}
+article.code .headerInfo .btnAddFavDes {
+    top:27px;
+}
+article.code .headerInfo  p.user {
+	position: absolute;
+	top: 12px;
+	padding-right: 10px;
+	background: #FFF;
+}
+article.code .headerInfo  p.user span,
+article.code .headerInfo  p.user a {
+	line-height: 30px;
+}
+
+/* Add Fav
+---------------------------------------------- */
+#boxAddFav {
+	display: none;
+	width: 380px;
+	margin: 10px 0 0;
+}
+#boxAddFav dl dd {
+	float: right;
+	width: 279px;
+}
+#boxAddFav dd input {
+	width: 270px;
+}
+#boxAddFav dd.btns input {
+	width: 80px;
+}
+#boxAddFav {
+	float: right;
+}
+
+
+/* meta data
+---------------------------------------------- */
+ul.data li {
+	margin-right: 10px;
+}
+
+/* diff
+---------------------------------------------- */
+div#diff_container { 
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+display: none;
+overflow: hidden;
+z-index: 2000;
+background-color: black;
+}
+div#diff_container div.left,
+div#diff_container div.right { 
+float: left;
+width: 49.9%;
+}
+div#diff_controller { 
+position: fixed;
+top: 10px;
+right: 10px;
+display: none;
+z-index: 3000;
+}
+
+
+/* ----------------------------------------------
+
+ Code
+
+---------------------------------------------- */
+.boxCode {
+	clear: both;
+	position: relative;
+	float: left;
+	width: 485px;
+	height: 465px;
+	margin: 30px 0 0;
+	background: #000;
+}
+.boxCode section {
+	margin: 0;
+}
+.boxCode h2 {
+	position: relative;
+	z-index: 20;
+	padding: 3px 45px 3px 15px;
+	background: #333 url(/img/edit/icon_resize_bar.png) no-repeat 50% 4px;
+	line-height: 1;
+	cursor: pointer;
+}
+.boxCode h2:hover {
+	background: #393939 url(/img/edit/icon_resize_bar.png) no-repeat 50% 4px;
+}
+.boxCode .closeCode {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 20px;
+	text-align: center;
+	cursor: pointer;
+	height: 18px;
+	line-height: 18px;
+	z-index: 21;
+}
+.boxCode .closeCode img {
+	vertical-align: middle;
+}
+
+.boxCode section{
+	position: relative;
+	height: 33.3%;
+}
+#boxEditJS {
+  height: 40%;
+}
+#boxEditJS h2,
+#boxEditJS h2:hover {
+	background-image: none;
+	background-color: #333;
+	cursor: default;
+}
+#boxEditHTML {   
+  height: 30%; 
+}
+#boxShowCode #boxEditHTML {
+	margin-top: -20px;
+}
+
+#boxEditCSS {   
+  height: 30%; 
+}
+
+.boxCode .code{
+	clear: both;
+	position: relative;
+	z-index: 10;
+	color: #888;
+	height: 100px;
+	overflow: hidden;
+}
+
+.boxCode .code pre{
+}
+
+.editorBox {   
+  height: 100%;
+}
+ 
+.editorBox textarea {   
+  background-color: black; 
+  color: white; 
+  width: 100%; 
+  height: 100%; 
+}
+ 
+.transparent {   
+  width: 100%; 
+  height: 100%; 
+  display: none; 
+  position: absolute; 
+  z-index: 1; 
+}
+.transparent img {   
+  width: 100%; 
+  height: 100%; 
+}
+
+.boxCode ul.tabCode li {
+	position: relative;
+	float: left;
+	width: 135px;
+	height: 11px;
+	overflow: hidden;
+	padding: 0 6px 3px;
+	border-right: 1px solid #333;
+	color: #FFF;
+	font-size: 85%;
+	text-decoration: none;
+	cursor: pointer;
+	line-height: 16px;
+	vertical-align: top;
+}
+.boxCode ul.tabCode li span {
+	vertical-align: top;
+}
+.boxCode ul.tabCode li.selected {
+	background: #333;
+}
+.boxCode ul.tabCode li:hover {
+	background: #333;
+}
+
+.boxCode .expandCode {
+	position: absolute;
+	top: 1px;
+	right: 22px;
+	width: 24px;
+	text-align: center;
+	cursor: pointer;
+	height: 18px;
+	line-height: 1;
+	z-index: 21;
+}
+#boxEditJS .expandCode {
+	right: 0px;
+}
+
+
+/* ----------------------------------------------
+
+ Viewer
+
+---------------------------------------------- */
+
+.boxViewer {
+	position: relative;
+	float: right;
+	width: 465px;
+	height: 465px;
+	margin:30px 0 12px;
+}
+.boxViewer .boxThumbViewer,
+.boxViewer #boxThumbViewer{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 465px;
+	height: 465px;
+}
+.boxViewer .boxThumbViewer p.btnPlayViewer,
+.boxViewer #boxThumbViewer p.btnPlayViewer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 465px;
+	height: 465px;
+}
+.boxViewer iframe {
+	border: none;
+}
+
+
+
+p.btnFullScreen {
+	position: absolute;
+	top: -20px;
+	right: 0;
+	width: 200px;
+	text-align: right;
+}
+p.btnFullScreen a {
+	padding-left: 17px;
+	background: url(../img/common/ico/ico_full_screen.png) no-repeat 0 2px;
+	color: #F00;
+	font-size: 85%;
+	text-decoration: none;
+}
+p.btnFullScreen a:hover {
+	text-decoration: underline;
+}
+ul#listPlayer {
+    text-align:right;
+	margin-bottom:20px;
+	width:950px;
+}
+ul#listActions {
+	clear: both;
+	position: relative;
+	width: 100%;
+	margin: 0 0 30px;
+	position:relative;
+}
+ul#listActions li.btnDl {
+	position: absolute;
+	top: 15px;
+	right: 0;
+	width: 102px;
+}
+.code .ctrlDisplay {
+    position:absolute;
+	top:25px;
+	right:130px;
+}
+#externalFlashViewer {
+    height:100%;
+    width:100%;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+/* ----------------------------------------------
+
+ Comment 
+ 
+---------------------------------------------- */
+.commentBaloon {
+    margin:20px 0;
+    position:relative;
+    background:url(/img/code/bg_comment_bot.png) no-repeat left bottom;
+}
+.commentBaloon .commentIcon {
+    background:url(/img/code/bg_baloon.png) no-repeat 26px 5px;
+    left:0;
+    position:absolute;
+    top:10px;
+    width:40px;
+}
+.commentBaloon .baloon {
+	background:url(/img/code/bg_comment_top.png) no-repeat 0 0;
+    margin-left:34px;
+    padding:10px;
+}
+
+/* ----------------------------------------------
+
+ Section
+
+---------------------------------------------- */
+
+#content section h1 {
+	margin: 0 0 15px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #300;
+}
+
+/* Realated images & video
+---------------------------------------------- */
+#sectImg,#sectVideo {
+    margin-bottom:30px;
+}
+/* Talk
+---------------------------------------------- */
+#sectTalk {
+	margin: 0 0 30px;
+}
+#sectTalk .boxFormTalk {
+	float: left;
+	width: 553px;
+	padding-top: 0;
+	margin-right: 15px;
+	border: none;
+}
+#sectTalk .boxFormTalk p.inputTalk {
+	margin: 0 0 10px;
+}
+#sectTalk .boxFormTalk p.inputTalk textarea {
+	width: 547px;
+	height: 100px;
+	font-size: 93%;
+}
+#sectTalk .boxFormTalk p.btnInputTalk input {
+	width: 150px;
+	font-size: 116%;
+	height: 24px;
+	line-height: 24px;
+}
+#sectTalk p.notes {
+	font-size: 108%;
+}
+
+#sectTalk .unitTalk{
+	margin: 0 0 10px;
+	padding: 0 0 5px;
+	background: url(../img/common/bdr/bdr_3-4x1.png) repeat-x 0 100%;
+}
+#sectTalk p.comment{
+	float: left;
+	width: 531px;
+	margin: 0 0 10px;
+	padding: 10px;
+	border: 1px solid #e8f0f1;
+	background: #f1fdfe;
+	font-size: 93%;
+	line-height: 1.8;
+	word-wrap: break-word;
+}
+#sectTalk ul {
+	width: 387px;
+	float: left;
+	padding-left: 10px;
+}
+#sectTalk ul li {
+	margin: 0 0 2px;
+	font-size: 93%;
+	color: #888;
+}
+#sectTalk ul li span.delete a {
+	margin-left: 8px;
+	padding-left: 12px;
+	background: url(../img/common/btn/btn_close_1.png) no-repeat 0 3px;
+}
+
+/* Tags
+---------------------------------------------- */
+#sectTags {
+	float: left;
+	width: 455px;
+	margin: 0 40px 30px 0;
+}
+#sectTags ul.listTag {
+	padding: 0 10px 20px;
+	background: none;
+}
+#sectTags ul.listTag li {
+	display: inline;
+	margin: 0 5px 0 0;
+	font-size: 108%;
+}
+#sectTags ul.listTag li a {
+	white-space: nowrap;
+}
+
+*+html ul.listTag li {
+	float: left;
+}
+*+html ul.listTag li a {
+	white-space: normal;
+}
+
+/* Keywords
+---------------------------------------------- */
+#sectKeywords {
+	float: left;
+	width: 455px;
+	margin: 0 0 30px;
+}
+ul.listKeywords {}
+ul.listKeywords li {
+	display: inline;
+	margin: 0 5px 0 0;
+	font-size: 108%;
+}
+ul.listKeywords li a {
+	white-space: nowrap;
+}
+
+*+html ul.listKeywords li {
+	float: left;
+}
+*+html ul.listKeywordsli a {
+	white-space: normal;
+}
+
+/* Favorite by
+---------------------------------------------- */
+
+#sectFavBy {
+	clear: both;
+	width: 950px;
+	margin: 0 0 30px;
+	overflow: hidden;
+}
+#sectFavBy div.unitgroup {
+	float: left;
+	width: 1000px;
+	margin: 0 0 5px;
+}
+#sectFavBy div.unitFavBy {
+	float: left;
+	width: 150px;
+	margin: 0 8px 5px 0;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+}
+#sectFavBy div.unitFavBy span.thumb {
+	margin-right: 5px;
+}
+
+/* Realated infomation
+---------------------------------------------- */
+.unitRelatedImg .thumb,
+#sectVideo object {
+    float:left;
+	margin-right:15px;
+}
+
+/* Forked
+---------------------------------------------- */
+
+#sectForked {
+	clear: both;
+	width: 950px;
+	margin: 0 0 30px;
+	overflow: hidden;
+}
+
+/* Flash2Android
+---------------------------------------------- */
+
+.listBtns li.btnAndroid {
+display: block;
+margin-top: 20px;
+}
+
+#popup {
+  position: absolute;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 385px;
+  height: 159px;
+  margin-left: -192px;
+  margin-top: -80px;
+  padding: 20px 30px;
+  background-color: #dbd7d0;
+  z-index: 100;
+  border: solid 1px #666;
+  -webkit--box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        -o-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+           box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+  #popup .btnClose {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #popup .ttlPopup {
+    margin-bottom: 19px;
+  }
+  #popup #email {
+    width: 250px;
+    height: 30px;
+    border: solid 1px #ccc;
+    line-height: 30px;
+  }
+  #popup #QRCode {
+    position: absolute;
+    right: 29px;
+    top: 58px;
+  }
+  #popup .btnSubmit {
+    width: 250px;
+    padding-top: 10px;
+    text-align: center;
+  }
+  #popup #converting {
+    font-size: 120%;
+  }
+
+/* ----------------------------------------------
+
+ Blogparts
+
+---------------------------------------------- */
+
+/* Layout
+---------------------------------------------- */
+#containerBp {
+	width: 100%;
+}
+#containerBp #boxShowCode {
+	top: 0;
+	margin: 0;
+	width: 465px;
+}
+#containerBp .headerInfo {
+	position: absolute;
+	top: 465px;
+	left: 0;
+	padding: 13px 100px 13px 20px;
+	width: 345px;
+	height: 55px;
+}
+#containerBp .headerInfo h1 {
+	display: inline;
+	margin-right: 5px;
+	font-size: 124%;
+	vertical-align: middle;
+}
+#containerBp .headerInfo h1 a {
+	color: #300;
+	text-decoration: none;
+}
+#containerBp .headerInfo h1 a:hover {
+	text-decoration: underline;
+}
+#containerBp .headerInfo p.user {
+	display: inline;
+	font-size: 93%;
+	vertical-align: middle;
+}
+#containerBp .headerInfo p.user span.thumb {
+	margin: 0 6px;
+	vertical-align: top;
+}
+#containerBp .headerInfo ul.data {
+	padding-top: 5px;
+}
+
+
+#containerBp .boxViewer {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 465px;
+	height: 465px;
+	margin: 0;
+	top: 0;
+}
+
+#containerBp ul#listActions {
+	position: absolute;
+	top: 465px;
+	left: 365px;
+	width: 80px;
+}
+#containerBp ul#listActions li {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#containerBp ul#listActions li input {
+	width: 80px;
+	height: 60px;
+	padding-left: 30px;
+	line-height: 60px;
+	vertical-align: middle;
+	background-position: 20px 50%;
+	background-repeat: no-repeat;
+	text-align: left;
+}
+#containerBp ul#listActions li input#btnStop {
+	display: none;
+	background-image: url(/img/code/btn_code_stop.png);
+}
+#containerBp ul#listActions li input#btnPlay {
+	background-image: url(/img/code/btn_code_play.png);
+}
+#containerBp p.navHomepage {
+	position: absolute;
+	top: 4px;
+	left: 400px;
+	z-index: 99;
+	width: 31px;
+	height: 12px;
+	line-height: 1;
+}
+
+
+/* ----------------------------------------------
+
+ no flash
+
+---------------------------------------------- */
+
+.noFlash .btnFullScreen,
+.noFlash div#parentsCode div.boxCodeInner,
+.noFlash #externalFlashViewer
+{
+	visibility: hidden !important;
+}
+
+.noFlash ul#listPlayer {
+	display: none;
+}
+
+.noFlash .listBtns li.btnEdit {
+	display: none;
+}
+
+.noFlash .code #parentsCode {
+	cursor: pointer;
+}

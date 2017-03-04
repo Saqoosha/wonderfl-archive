@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/* ----------------------------------------------
+
+	JSdoit / user STYLE
+	author   : (C)KAYAC http://www.kayac.com/
+
+---------------------------------------------- */
+
+/* ----------------------------------------------
+
+ Common
+
+---------------------------------------------- */
+
+section>h1 {
+	margin: 0 0 20px;
+	padding: 0 0 5px;
+	background: url(../img/common/bdr/bdr_3-4x1.png) repeat-x 0 100%;
+	font-size: 200%;
+	font-weight: bold;
+	word-wrap: break-word;
+}
+section div.boxAds {
+	margin: 0 0 30px;
+	clear: both;
+}
+
+
+/* Profile
+---------------------------------------------- */
+#sectProfile {
+	margin: 0 0 30px;
+}
+#sectProfile .boxAds {
+	clear: none;
+}
+
+#sectProfile #boxProfBasic {
+	float: left;
+	width: 200px;
+	margin-right: 50px;
+	text-align: center;
+}
+#sectProfile #boxProfBasic p.thumb {
+	margin: 0 0 4px;
+}
+#sectProfile #boxProfBasic p.name {
+	word-wrap: break-word;
+	font-size: 154%; 
+	font-weight: bold;
+	line-height: 1.2;
+}
+#sectProfile #boxProfBasic p.edit a {
+	padding-left: 15px;
+	background: url(../img/common/ico/ico_modified.png) no-repeat 0 3px;
+	font-size: 93%;
+}
+#sectProfile #boxProfBasic p#btnAddFav {
+	margin: 0 0 4px;
+}
+#sectProfile #boxProfBasic p.delete {
+	font-size: 93%;
+}
+
+
+#sectProfile #boxProfInfo {
+	float: left;
+	width: 470px;
+}
+#sectProfile #boxProfInfo ul li {
+	display: block;
+	font-size: 100%;
+	padding: 0;
+	background: none;
+}
+#sectProfile #boxProfInfo ul li.description {
+	padding: 10px 0 0;
+	word-wrap: break-word;
+}
+#sectProfile .boxAds {
+	float: right;
+	width: 200px;
+	margin: 0;
+}
+#sectProfile .award {
+	background: url(../img/common/checkmate_icon.png) no-repeat 0 0;
+	padding-left:30px;
+}
+
+/* Activity
+---------------------------------------------- */
+.boxTab {}
+.boxTab ul {
+	padding: 0 0 10px;
+}
+.boxTab ul li {
+	display: inline;
+	padding: 0 5px;
+	border-right: 1px solid #ccc;
+}
+.boxTab ul li.selected {
+	font-size: 139%;
+	font-weight: bold;
+}
+.boxTab ul li.selected em {
+	margin-right: 4px;
+}
+
+#sectActivity {}
+#sectActivity .unitGroup {
+	margin: 0 0 30px;
+}
+
+.unitAction {
+	position: relative;
+	width: auto;
+	padding: 10px 0;
+	border-top: 1px solid #EEE;
+}
+.unitAction ul.data,
+.unitAction p.user,
+.unitAction p.code {
+	display: inline;
+	margin: 0 2px;
+}
+.unitAction ul.data {
+	margin-left: 10px;
+}
+.unitAction p.code {
+	font-weight: bold;
+}
+.unitAction p.date {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	width: 300px;
+	text-align: right;
+	display: inline;
+	font-size: 85%;
+	color: #999;
+}
+.unitAction .actionLv2 {
+	margin-left: 30px;
+}
+.unitAction .actionLv3 {
+	margin-left: 60px;
+}
+
+
+

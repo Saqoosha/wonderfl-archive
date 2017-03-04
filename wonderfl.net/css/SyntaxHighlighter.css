@@ -1,0 +1,219 @@
+.dp-highlighter {
+  font-family: "Consolas", "Courier New", Courier, mono, serif;
+  font-size: 12px;
+  background-color:#222222;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* clear styles */
+.dp-highlighter ol,
+.dp-highlighter ol li,
+.dp-highlighter ol li span 
+{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.dp-highlighter a,
+.dp-highlighter a:hover
+{
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+  color: #4A48FF;
+}
+
+.dp-highlighter .bar
+{
+}
+
+.dp-highlighter.collapsed .bar,
+.dp-highlighter.nogutter .bar
+{
+	padding-left: 0px;
+}
+
+.dp-highlighter ol {
+  list-style: decimal; /* for ie */
+  background-color: #222222;
+  margin: 0px 0px 1px 45px !important; /* 1px bottom margin seems to fix occasional Firefox scrolling */
+  color: #FFF;
+  padding-top: 10px;
+}
+
+.dp-highlighter.nogutter ol,
+.dp-highlighter.nogutter ol li
+{
+	list-style: none !important;
+	margin-left: 0px !important;
+}
+
+.dp-highlighter ol li,
+.dp-highlighter .columns div
+{
+list-style: decimal; /*decimal-leading-zero;*/ /* better look for others, override cascade from OL */
+list-style-position: outside !important;
+border-left: 1px solid #191919;
+background-color: #222222;
+color: #FFF;
+padding: 0 3px 0 10px !important;
+margin: 0 !important;
+line-height: 15px;
+}
+
+.dp-highlighter.nogutter ol li,
+.dp-highlighter.nogutter .columns div
+{
+	border: 0;
+}
+
+.dp-highlighter .columns
+{
+	background-color: #222222;
+	color: gray;
+	overflow: hidden;
+	width: 100%;
+}
+
+.dp-highlighter .columns div
+{
+	padding-bottom: 5px;
+}
+
+.dp-highlighter ol li.alt
+{
+background-color: #191919;
+color: #FFF;
+}
+
+.dp-highlighter ol li span
+{
+  color:#FFF;
+  background-color: inherit;
+}
+.dp-highlighter ol li.diff_del { 
+text-decoration: line-through;
+background-color: #900;
+}
+.dp-highlighter ol li.diff_add { 
+background-color: #009;
+}
+.dp-highlighter ol li.diff_changed_before { 
+background-color: #900;
+}
+.dp-highlighter ol li.diff_changed_after { 
+background-color: #009;
+}
+
+/* Adjust some properties when collapsed */
+
+.dp-highlighter.collapsed ol
+{
+	margin: 0px;
+}
+
+.dp-highlighter.collapsed ol li
+{
+	display: none;
+}
+
+/* Additional modifications when in print-view */
+
+.dp-highlighter.printing
+{
+	border: none;
+}
+
+.dp-highlighter.printing .tools
+{
+	display: none !important;
+}
+
+.dp-highlighter.printing li
+{
+	display: list-item !important;
+}
+
+/* Styles for the tools */
+
+.dp-highlighter .tools
+{
+	padding: 5px 8px 5px 10px;
+	font: 9px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: silver;
+	background-color: #333;
+/*	border-left: 1px solid #191919;*/
+	}
+
+.dp-highlighter.nogutter .tools
+{
+	border-left: 0;
+}
+
+.dp-highlighter.collapsed .tools
+{
+	border-bottom: 0;
+}
+
+.dp-highlighter .tools a
+{
+	font-size: 9px;
+	color: #a0a0a0;
+	background-color: inherit;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+.dp-highlighter .tools a:hover
+{
+	color: red;
+	background-color: inherit;
+	text-decoration: underline;
+}
+
+/* About dialog styles */
+
+.dp-about { background-color: #fff; color: #333; margin: 0px; padding: 0px; }
+.dp-about table { width: 100%; height: 100%; font-size: 11px; font-family: Tahoma, Verdana, Arial, sans-serif !important; }
+.dp-about td { padding: 10px; vertical-align: top; }
+.dp-about .copy { border-bottom: 1px solid #ACA899; height: 95%; }
+.dp-about .title { color: red; background-color: inherit; font-weight: bold; }
+.dp-about .para { margin: 0 0 4px 0; }
+.dp-about .footer { background-color: #ECEADB; color: #333; border-top: 1px solid #fff; text-align: right; }
+.dp-about .close { font-size: 11px; font-family: Tahoma, Verdana, Arial, sans-serif !important; background-color: #ECEADB; color: #333; width: 60px; height: 22px; }
+
+/* Language specific styles */
+
+.dp-highlighter .comment, .dp-highlighter .comments {
+color: #53B055;
+background-color: inherit;
+}
+.dp-highlighter .string {
+color: #4A48FF;
+background-color: inherit;
+}
+.dp-highlighter .keyword {
+color: #CF734B;
+font-weight: bold;
+background-color: inherit;
+}
+.dp-highlighter .preprocessor { color: gray; background-color: inherit; }
+
+.dp-as .definition { 
+color: #b062a3;
+font-weight: bold;
+}
+.dp-as .type {
+color: #CF73A3;
+font-weight: bold;
+}
+.dp-as .search_keyword { 
+background-color: #FFCCCC;
+color: #330000;
+font-weight: bold;
+}

@@ -1,0 +1,1511 @@
+<!DOCTYPE HTML>
+<html lang="ja" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:mixi="http://mixi-platform.com/ns#" xmlns:og="http://ogp.me/ns#">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
+  <title>
+   forked from: SuperEllipse - wonderfl build flash online
+  </title>
+  <meta content="forked from: SuperEllipse | wonderfl build flash online" name="title"/>
+  <meta content="forked from: SuperEllipse @author Andre Michelle @ wonderfl build flash online. wonderflは、サイト上でFlash（swf）をつくることのできるサービス。Actionscript3のコードを書くと、自動でコンパイルし、作成されたFlashを見ることができます。" name="description"/>
+  <meta content="Flash,Actionscript3,Flex,as3,wonderful" http-equiv="Keywords"/>
+  <meta content="text/css" http-equiv="content-style-type"/>
+  <meta content="text/javascript" http-equiv="content-script-type"/>
+  <meta content="KAYAC Inc." name="author"/>
+  <meta content="Copyright © 2008-2010 Wonderfl All right reserved. KAYAC Inc." name="copyright"/>
+  <meta content="wonderfl build flash online" property="og:site_name"/>
+  <meta content="100748186650646" property="fb:page_id"/>
+  <!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+  <link href="../../css/common.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../css/reserved.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../css/SyntaxHighlighter.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../css/code.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../css/lightbox.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../img/favicon.png" rel="shortcut icon" type="image/png"/>
+  <link href="../../images/capture/2/2a/2a4f/2a4fe6e8af0b0d8e9c3bce31eb2691cf409268ad_100.jpg" rel="image_src"/>
+  <link href="../../images/capture/2/2a/2a4f/2a4fe6e8af0b0d8e9c3bce31eb2691cf409268ad_100.jpg" rel="mixi-check-image"/>
+  <meta content="http://wonderfl.net/images/capture/2/2a/2a4f/2a4fe6e8af0b0d8e9c3bce31eb2691cf409268ad_100.jpg" property="og:image"/>
+  <meta content="forked from: SuperEllipse" property="og:title"/>
+  <meta content="video" name="medium"/>
+  <meta content="../../swf/usercode/2/2a/2a4f/2a4fe6e8af0b0d8e9c3bce31eb2691cf409268ad.swf" property="og:video"/>
+  <meta content="forked from: SuperEllipse" property="og:audio:title"/>
+  <meta content="465" property="og:video:height"/>
+  <meta content="465" property="og:video:width"/>
+  <meta content="application/x-shockwave-flash" property="og:video:type"/>
+  <script src="../../js/header.js" type="text/javascript">
+  </script>
+  <script src="http://partner.googleadservices.com/gampad/google_service.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div class="codepage contents" id="container">
+   <!--[[[ HEADER-AREA ]]]-->
+   <header class="group" id="headerGlobal">
+    <p id="siteName">
+     <a href="../../" title="wonderfl - build flash online">
+      <img alt="wonderfl - build flash online" height="24" src="../../img/common/logo.png" width="234"/>
+     </a>
+    </p>
+    <nav id="navGlobal">
+     <ul>
+      <li class="column">
+       <span class="header_menu_column">
+        <a href="../../login" onclick="this.href='/login?redirect=' + encodeURIComponent(location.pathname);">
+         signin
+        </a>
+       </span>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_2" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../codes" title="flash,actionscript3 code ranking">
+         codes
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_2" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../codes" title="page view ranking">
+          page view ranking
+         </a>
+        </li>
+        <li>
+         <a href="../../codes?order=favorite" title="favorites count ranking">
+          favorite ranking
+         </a>
+        </li>
+        <li>
+         <a href="../../codes?order=forked" title="forked count ranking">
+          forked count ranking
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_3" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../users" title="wonderfl users">
+         users
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_3" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../users" title="page view ranking">
+          page view ranking
+         </a>
+        </li>
+        <li>
+         <a href="../../users?order=favorite" title="favorites count ranking">
+          favorite ranking
+         </a>
+        </li>
+        <li>
+         <a href="../../users?order=forked" title="forked count ranking">
+          forked count ranking
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_8" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="http://flash-games.wonderfl.net/" title="game wonderfl">
+         games
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_8" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="http://flash-games.wonderfl.net/about" title="フラッシュゲームをつくる">
+          make games
+         </a>
+        </li>
+        <li>
+         <a href="http://flash-games.wonderfl.net/" title="フラッシュゲームで遊ぶ">
+          play games
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_10" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../events" title="events">
+         events
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_10" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a class="external" href="http://jsdo.it/event/jam/" title="HTML5&amp;Flash">
+          JAM -HTML5&amp;Flash-
+         </a>
+        </li>
+        <li>
+         <a class="external" href="http://checkmate.wonderfl.net/" title="CHECKMATE">
+          CHECKMATE
+         </a>
+        </li>
+        <li>
+         <a class="external" href="http://nengafl.wonderfl.net/" title="nengafl">
+          nengafl
+         </a>
+        </li>
+        <li>
+         <a href="../../code/adce526f063149d781c2752e7472b08ad7279595" title="FeliCa Flash Contest">
+          FeliCa Flash Contest
+         </a>
+        </li>
+       </ul>
+      </li>
+      <!-- li class="column">
+<span class="header_menu_column" id="header_menu_column_9" onmouseover="Wonderfl.Header.mouseover(this);" onmouseout="Wonderfl.Header.mouseout(this);"><a href="http://flash-jobs.wonderfl.net/" title="flash-jobs" target="_blank" >jobs</a></span>
+<ul class="navGlobalSub" id="header_submenu_9" style="display:none;" onmouseover="Wonderfl.Header.mouseover(this);" onmouseout="Wonderfl.Header.mouseout(this);">
+<li><a href="http://flash-jobs.wonderfl.net/" title="want a job?" target="_blank" >want a job?</a></li>
+<li><a href="http://flash-jobs.wonderfl.net/plan" title="post a job" target="_blank" >post a job</a></li>
+</ul>
+</li -->
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_4" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../tags" title="tags">
+         tags
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_4" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../search" title="Flash/Actionscript keywords">
+          Flash/Actionscript keywords
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_5" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../qa" title="Flash Q&amp;A">
+         Q&amp;A
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_5" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../qa#questions" title="Flash Q&amp;A">
+          new questions
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column header_menu header_last">
+       <span class="header_menu_column" id="header_menu_column_7" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../about/" title="about">
+         wonderfl?
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_7" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../about/" title="about">
+          what is wonderfl?
+         </a>
+        </li>
+        <li>
+         <a href="../../help" title="help, FAQ">
+          help!
+         </a>
+        </li>
+        <li>
+         <a href="../../libraries" title="libraries">
+          libraries
+         </a>
+        </li>
+        <li>
+         <a href="../../wiki" title="wiki">
+          wiki
+         </a>
+        </li>
+        <li>
+         <a href="../../apis" title="APIs">
+          APIs
+         </a>
+        </li>
+        <li>
+         <a href="../../media" title="Media">
+          Media Information
+         </a>
+        </li>
+        <li>
+         <a href="../../blog" title="developer's blog">
+          developer's blog
+         </a>
+        </li>
+        <li>
+         <a href="../../help#help_contact" title="contact">
+          contact
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </nav>
+    <div id="navUtility">
+     <div id="btnHeaderCodeNew">
+      <form action="/code/new" method="get">
+       <fieldset>
+        <p>
+         <input alt="コードを書きはじめる" class="btnT" src="../../img/common/btn_write_code.png" type="image"/>
+        </p>
+       </fieldset>
+       <input name="token" type="hidden" value="29fee1e8f0e2a58e12d683955555628754e40b1bbe752dc2cb7893b49da35aa3"/>
+      </form>
+      <!-- / #btnHeaderCodeNew -->
+     </div>
+     <div id="navGlobalSearch">
+      <form action="/search" class="search" method="get">
+       <span>
+        <a href="../../search" title="flash,actionscript3 code search">
+         code search
+        </a>
+       </span>
+       <input class="query" name="q" type="text"/>
+       <input class="search_btn btnT" src="../../img/common/btn/btn_go.png" type="image" value=""/>
+      </form>
+      <!--/#navGlobalSearch-->
+     </div>
+     <!-- /#navUtility -->
+    </div>
+    <!--/#header-->
+   </header>
+   <!--/[[[ HEADER-AREA ]]]-->
+   <!--[[[ CONTENT-AREA ]]]-->
+   <div class="group" id="content">
+    <!--Banner-->
+    <div class="ad_super_bnr bnrAd btnT">
+     <!-- wonderfl_codepage_fullbnr1 -->
+    </div>
+    <!--Banner-->
+    <article class="code">
+     <header>
+      <div id="boxForked">
+       <dl>
+        <dt>
+         Forked from:
+        </dt>
+        <dd>
+         <span class="user">
+          <a href="../../user/AndreMichelle" title="AndreMichelle">
+           AndreMichelle
+          </a>
+          's
+          <a href="../../c/g9E6">
+           SuperEllipse
+          </a>
+         </span>
+        </dd>
+       </dl>
+       <p class="diff">
+        <a href="#" onclick="Wonderfl.Codepage.on_diff_click('g9E6','62jf'); return false;">
+         diff:48
+        </a>
+       </p>
+       <!-- /#boxForked -->
+      </div>
+      <div class="headerInfo group">
+       <h1>
+        forked from: SuperEllipse
+       </h1>
+       <p class="description">
+        @author Andre Michelle
+       </p>
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/Saqoosha" title="Saqoosha">
+          <img alt="Saqoosha" height="30" src="../../images/icon/8/84/843c/843c39c833373950ceb84fbea431f59bb5e6bec1m" title="Saqoosha" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/Saqoosha" title="Saqoosha">
+         Saqoosha
+        </a>
+       </p>
+       <ul class="data">
+        <ul class="data">
+         <li class="forked">
+          forked:0
+         </li>
+         <li class="fav">
+          <a href="#code_favorites" title="forked from: SuperEllipse favorites">
+           favorite:15
+          </a>
+         </li>
+         <li class="lines">
+          lines:250
+         </li>
+         <li class="license">
+          license : 
+  see code comments
+         </li>
+         <li class="modified">
+          modified : 2009-10-23 10:36:33
+         </li>
+        </ul>
+       </ul>
+       <p class="btnAddFav btnAddFavDes">
+        <a href="../../login?redirect=http%3A%2F%2Fwonderfl.net%2Fc%2F62jf">
+         <img alt="add to favorites" class="btnT" height="50" src="../../img/common/btn/btn_code_add_fav.png?t=1" width="140"/>
+        </a>
+       </p>
+       <!-- /.headerInfo -->
+      </div>
+     </header>
+     <div class="mode_view" id="parentsCode">
+      <div class="boxCodeInner">
+       <div class="code mode_view">
+        <div id="as3_container">
+         <div id="externalFlashViewer">
+         </div>
+         <textarea id="raw_as3" style="display:none;">// forked from AndreMichelle's SuperEllipse
+package  
+{
+	import com.bit101.components.HUISlider;
+	
+	import flash.display.Shape;
+	import flash.display.Sprite;
+	import flash.display.StageAlign;
+	import flash.display.StageScaleMode;
+	import flash.events.Event;
+	import flash.geom.Matrix3D;
+	import flash.geom.PerspectiveProjection;
+	import flash.geom.Utils3D;
+	import flash.geom.Vector3D;
+	
+	/**
+	 * @author Andre Michelle
+	 */
+	[SWF(width='465',height='490',frameRate='50',backgroundColor='0x0')]
+	public class SuperEllipse extends Sprite 
+	{
+		private const proj: PerspectiveProjection = new PerspectiveProjection();
+		
+		private const ellipse: SuperEllipseGeometry = new SuperEllipseGeometry( 24 ); // PLAY HERE (RESOLUTION)
+		
+		private const matrix: Matrix3D = new Matrix3D();
+		
+		private const shape: Shape = new Shape();
+		
+		private var power1:HUISlider;
+		private var power2:HUISlider;
+		
+		public function SuperEllipse()
+		{
+			stage.align = StageAlign.TOP_LEFT;
+			stage.scaleMode = StageScaleMode.NO_SCALE;
+			stage.addEventListener( Event.RESIZE, resize );
+			stage.addEventListener( Event.ENTER_FRAME, enterFrame );
+			
+			addChild( shape );
+			
+			power1 = new HUISlider(this, 5, 5, 'POWER1');
+			power2 = new HUISlider(this, 5, 25, 'POWER2');
+			power1.width = power2.width = 300;
+			//power1.tick = power2.tick = 0.01;
+			power1.minimum = power2.minimum = -0.5;
+			power1.maximum = power2.maximum = 5;
+			power1.value = power2.value = 1.0;
+			power1.labelPrecision = power2.labelPrecision = 3;
+			
+			resize( null );
+		}
+		
+		private function resize( event: Event ): void
+		{
+			shape.x = int( stage.stageWidth * .5 );
+			shape.y = int( stage.stageHeight * .5 );
+		}
+		
+		private function enterFrame( event: Event ): void
+		{
+			// DEFINITELY PLAY HERE!!! (SUPER ELLIPSE PARAMETERS)
+			// CAUTION VALUES BELOW ZERO ARE POSSIBLE, BUT BLOW UP THE GEOMETRY (NO CLIPPING)
+			ellipse.modify( power1.value, power2.value );
+			
+			matrix.identity();
+			matrix.appendScale( 64.0, 64.0, 64.0 );
+			matrix.appendRotation( shape.mouseX * .5, Vector3D.Y_AXIS );
+			matrix.appendRotation(-shape.mouseY * .5, Vector3D.X_AXIS );
+			matrix.appendTranslation( 0.0, 0.0, 128.0 );
+			matrix.transformVectors( ellipse.wVerts, ellipse.tVerts );
+			proj.fieldOfView = 75.0;
+			Utils3D.projectVectors( proj.toMatrix3D(), ellipse.tVerts, ellipse.projectedVerts, ellipse.uvts );
+			
+			ellipse.drawQuadStrip( shape.graphics );
+		}
+	}
+}
+
+import flash.display.Graphics;
+
+/**
+ * http://ozviz.wasp.uwa.edu.au/~pbourke/geometry/superellipse/
+ */
+class SuperEllipseGeometry
+{
+	private const TWOPI: Number = Math.PI * 2.0;
+	private const PID2: Number = Math.PI * 0.5;
+	
+	private var _n: int;
+	private var _p: P;
+	
+	public var wVerts: Vector.&lt;Number&gt;;
+	public var tVerts: Vector.&lt;Number&gt;;
+	public var uvts: Vector.&lt;Number&gt;;
+	public var projectedVerts: Vector.&lt;Number&gt;;
+	public var quadsNum: int;
+	public var vertsNum: int;
+	public var quads: Vector.&lt;int&gt;;
+	
+	public function SuperEllipseGeometry( n: int )
+	{
+		_n = n;
+		
+		_init();
+	}
+	
+	public function modify( power1: Number, power2: Number ): void
+	{
+		var tmp: Number;
+		var i: int = -1;
+		var p: P = _p;
+		
+		var x: Number;
+		var y: Number;
+		var z: Number;
+		
+		while( p )
+		{
+			if( 0.0 == p.abs_ct1 )
+				tmp = 0.0;
+			else
+				tmp = p.sgn_ct1 * Math.pow( p.abs_ct1, power1 );
+			
+			if( 0.0 == p.abs_ct2 )
+				x = 0.0;
+			else
+				x = tmp * p.sgn_ct2 * Math.pow( p.abs_ct2, power2 );
+			
+			if( 0.0 == p.abs_st1 )
+				y = 0.0;
+			else
+				y = p.sgn_st1 * Math.pow( p.abs_st1, power1 );
+			
+			if( 0.0 == p.abs_st2 )
+				z = 0.0;
+			else
+				z = tmp * p.sgn_st2 * Math.pow( p.abs_st2, power2 );
+			
+			wVerts[ ++i ] = x;
+			wVerts[ ++i ] = y;
+			wVerts[ ++i ] = z;
+			
+			p = p.next;
+		}
+	}
+	
+	public function drawQuadStrip( graphics: Graphics ): void
+	{
+		graphics.clear();
+		graphics.lineStyle( 0, 0xFFFFFF, 0.5 );
+		
+		var qi: int;
+		var pi: int;
+		var x0: Number;
+		var y0: Number;
+		
+		var i: int = 0;
+		var n: int = quadsNum;
+		
+		for( ; i &lt; n ; ++i )
+		{
+			qi = i &lt;&lt; 2;
+			
+			pi = quads[qi] &lt;&lt; 1;
+			graphics.moveTo( x0 = projectedVerts[ pi ], y0 = projectedVerts[ ++pi ] );
+			
+			pi = quads[++qi] &lt;&lt; 1;
+			graphics.lineTo( projectedVerts[ pi ], projectedVerts[ ++pi ] );
+			
+			pi = quads[++qi] &lt;&lt; 1;
+			graphics.lineTo( projectedVerts[ pi ], projectedVerts[ ++pi ] );
+			
+			pi = quads[++qi] &lt;&lt; 1;
+			graphics.lineTo( projectedVerts[ pi ], projectedVerts[ ++pi ] );
+			
+			graphics.lineTo( x0, y0 );
+		}
+	}
+	
+	/*
+	BUILDING GEOMETRY
+	*/
+	private function _init(): void
+	{
+		vertsNum = ( ( _n &gt;&gt; 1 ) + 1 ) * _n;
+		quadsNum = vertsNum - _n;
+		
+		wVerts = new Vector.&lt;Number&gt;( vertsNum * 3, true );
+		tVerts = new Vector.&lt;Number&gt;( vertsNum * 3, true );
+		uvts = new Vector.&lt;Number&gt;( vertsNum * 3, true );
+		projectedVerts = new Vector.&lt;Number&gt;( vertsNum * 2, true );
+		quads = new Vector.&lt;int&gt;( quadsNum &lt;&lt; 2, true );
+		
+		var i: int;
+		var j: int;
+		var nh: int = _n &gt;&gt; 1;
+		
+		var t1: Number;
+		var t2: Number;
+		
+		var iInv: Number = 1.0 / _n;
+		var pn: Number = TWOPI / _n;
+		
+		var uvi: int = -1;
+		
+		var ct1: Number;
+		var ct2: Number;
+		var st1: Number;
+		var st2: Number;
+		
+		var qi: int = -1;
+		var jn: int;
+		
+		var p: P;
+		
+		for( j = 0 ; j &lt;= nh ; ++j )
+		{
+			t1 = j * pn - PID2;
+			
+			for( i = 0 ; i &lt; _n ; ++i )
+			{
+				if( i == 0 )
+					t2 = 0.0;
+				else
+					t2 = i * pn;
+				
+				if( null == p )
+					p = _p = new P();
+				else
+					p = p.next = new P();
+				
+				ct1 = Math.cos( t1 );
+				ct2 = Math.cos( t2 );
+				st1 = Math.sin( t1 );
+				st2 = Math.sin( t2 );
+				
+				if( ct1 &lt; 0.0 )
+				{
+					p.abs_ct1 = -ct1;
+					p.sgn_ct1 = -1.0;
+				}
+				else
+				{
+					p.abs_ct1 = ct1;
+					p.sgn_ct1 = 1.0;
+				}
+				
+				if( ct2 &lt; 0.0 )
+				{
+					p.abs_ct2 = -ct2;
+					p.sgn_ct2 = -1.0;
+				}
+				else
+				{
+					p.abs_ct2 = ct2;
+					p.sgn_ct2 = 1.0;
+				}
+				
+				if( st1 &lt; 0.0 )
+				{
+					p.abs_st1 = -st1;
+					p.sgn_st1 = -1.0;
+				}
+				else
+				{
+					p.abs_st1 = st1;
+					p.sgn_st1 = 1.0;
+				}
+				
+				if( st2 &lt; 0.0 )
+				{
+					p.abs_st2 = -st2;
+					p.sgn_st2 = -1.0;
+				}
+				else
+				{
+					p.abs_st2 = st2;
+					p.sgn_st2 = 1.0;
+				}
+				
+				//-- NOT USED, BUT GO AHEAD &gt; ADD TEXTURES
+				uvts[ ++uvi ] = i * iInv;
+				uvts[ ++uvi ] = 2.0 * j * iInv;
+				uvts[ ++uvi ] = 0.0;
+				
+				if( j &gt; 0 )
+				{
+					jn = j * _n;
+					
+					if( i &gt; 0 )
+					{
+						quads[++qi] = ( j - 1 ) * _n + i - 1; 
+						quads[++qi] = ( j - 1 ) * _n + i;
+						quads[++qi] = jn + i;
+						quads[++qi] = jn + i - 1;
+					}
+					else
+					{
+						quads[++qi] = jn - 1; 
+						quads[++qi] = ( j - 1 ) * _n;
+						quads[++qi] = jn;
+						quads[++qi] = ( j + 1 ) * _n - 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+class P
+{
+	public var abs_ct1: Number;
+	public var abs_ct2: Number;
+	public var abs_st1: Number;
+	public var abs_st2: Number;
+	
+	public var sgn_ct1: Number;
+	public var sgn_ct2: Number;
+	public var sgn_st1: Number;
+	public var sgn_st2: Number;
+	
+	public var next: P;
+}</textarea>
+         <p class="btnFullScreen">
+          <a href="../../c/62jf/read">
+           Code Fullscreen
+          </a>
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="codeswf boxCodeInner ">
+       <p class="btnFullScreen">
+        <a href="../../c/62jf/fullscreen">
+         Preview Fullscreen
+        </a>
+       </p>
+       <div id="swf_container">
+        <div id="swf">
+         <img alt="flash swf thumbnail" height="465" src="../../images/capture/2/2a/2a4f/2a4fe6e8af0b0d8e9c3bce31eb2691cf409268ad.jpg" title="forked from: SuperEllipse" width="465"/>
+         <a href="javascript:void(0);" id="play_button" onclick="Wonderfl.Codepage.play(); return false;">
+          <img alt="play" class="iepngfix btn" src="../../img/common/play_button.png"/>
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <ul class="listBtns" id="listPlayer">
+      <li>
+       <a href="javascript:void(0);">
+        <img class="btnT" height="10" id="btnPlay" src="../../img/code/btn_code_play.png" width="30"/>
+       </a>
+      </li>
+      <li>
+       <a href="javascript:void(0);">
+        <img class="btnT" height="10" id="btnStop" src="../../img/code/btn_code_stop.png" style="display: none;" width="34"/>
+       </a>
+      </li>
+      <li>
+       <a href="javascript:void(0);">
+        <img class="btnT" height="10" id="btnReload" src="../../img/code/btn_code_reload.png" style="display: none;" width="44"/>
+       </a>
+      </li>
+     </ul>
+     <ul class="listBtns" id="listActions">
+      <li class="btnEdit btnT">
+       <a href="../../c/62jf/fork">
+        <img class="btnT" height="46" src="../../img/code/btn_code_fork.png" width="221"/>
+       </a>
+      </li>
+      <li class="btnDl btnT">
+       <a href="../../c/62jf/62jf.zip">
+        <img class="btnT" height="14" src="../../img/common/btn/btn_code_dl.png" width="102"/>
+       </a>
+      </li>
+     </ul>
+     <!--Banner-->
+     <div class="ad_super_bnr bnrAd btnT">
+      <p>
+       <!-- wonderfl_codepage_fullbnr2 -->
+      </p>
+     </div>
+     <!--Banner-->
+     <section class="group" id="sectFavBy">
+      <h1 id="code_favorites">
+       <img alt="Favorite by" height="19" src="../../img/code/ttl_code_fav_by.png" width="111"/>
+      </h1>
+      <div class="unitGroup group">
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/FlashFit" title="FlashFit">
+          <img alt="FlashFit" height="30" src="../../img/common/img_user_anonymous.gif" title="FlashFit" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/FlashFit" title="FlashFit">
+         FlashFit
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/siouxcitizen" title="siouxcitizen">
+          <img alt="siouxcitizen" height="30" src="../../img/common/img_user_anonymous.gif" title="siouxcitizen" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/siouxcitizen" title="siouxcitizen">
+         siouxcitizen..
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/dizgid" title="dizgid">
+          <img alt="dizgid" height="30" src="../../img/common/img_user_anonymous.gif" title="dizgid" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/dizgid" title="dizgid">
+         dizgid
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/nyamogera" title="nyamogera">
+          <img alt="nyamogera" height="30" src="../../images/icon/6/62/6239/6239641019a353e6e3b3d3c3563b96347e3da3abm" title="nyamogera" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/nyamogera" title="nyamogera">
+         nyamogera
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/tkinjo" title="tkinjo">
+          <img alt="tkinjo" height="30" src="../../images/icon/0/01/015b/015bc0b73d35f9e45774a163b7d26bf97b4684c0m" title="tkinjo" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/tkinjo" title="tkinjo">
+         tkinjo
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/paq" title="paq">
+          <img alt="paq" height="30" src="../../images/icon/9/9a/9a3d/9a3d6f78091dce4ac57ebf3f8d754e6cdeca9013m" title="paq" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/paq" title="paq">
+         paq
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/sw_lucchini" title="sw_lucchini">
+          <img alt="sw_lucchini" height="30" src="../../images/icon/d/d1/d149/d14976d0e9c864c3fd94423617d92e6415859eefm" title="sw_lucchini" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/sw_lucchini" title="sw_lucchini">
+         sw_lucchini
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/alumican_net" title="alumican_net">
+          <img alt="alumican_net" height="30" src="../../images/icon/0/04/04b8/04b80a906b0de6fab253ccaf4efafdf30b213939m" title="alumican_net" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/alumican_net" title="alumican_net">
+         alumican_net..
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/keim_at_Si" title="keim_at_Si">
+          <img alt="keim_at_Si" height="30" src="../../images/icon/2/27/278a/278afc585a0a283d6e1f13f081cfd9c377ab9db2m" title="keim_at_Si" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/keim_at_Si" title="keim_at_Si">
+         keim_at_Si
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/selflash" title="selflash">
+          <img alt="selflash" height="30" src="../../images/icon/8/87/8715/87155fa3098a3f871c46a4006d3c85c9e3468522m" title="selflash" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/selflash" title="selflash">
+         selflash
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/flasher_bbb" title="flasher_bbb">
+          <img alt="flasher_bbb" height="30" src="../../images/icon/b/b4/b477/b47742921c07c48dc8a6d5c5e918b1b1a19fa931m" title="flasher_bbb" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/flasher_bbb" title="flasher_bbb">
+         flasher_bbb
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/chimanaco" title="chimanaco">
+          <img alt="chimanaco" height="30" src="../../images/icon/c/cf/cf5f/cf5f5e04c5245e31bc75e2213a111db750df6e97m" title="chimanaco" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/chimanaco" title="chimanaco">
+         chimanaco
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/a24" title="a24">
+          <img alt="a24" height="30" src="../../images/icon/1/1a/1a39/1a398ecd69f80dc0f11fd8b971b1cca128ae03fem" title="a24" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/a24" title="a24">
+         a24
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <!-- /.unitGroup -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/zmaxlin" title="zmaxlin">
+          <img alt="zmaxlin" height="30" src="../../images/icon/1/1d/1d9c/1d9c8c96aec68fbb07e3bab6d64f77d5604806c5m" title="zmaxlin" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/zmaxlin" title="zmaxlin">
+         zmaxlin
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/3D" title="3D">
+         3D
+        </a>
+        <a class="tag" href="../../tag/Matrix3D" title="Matrix3D">
+         Matrix3D
+        </a>
+        <a class="tag" href="../../tag/Vector3D" title="Vector3D">
+         Vector3D
+        </a>
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/kamip" title="kamip">
+          <img alt="kamip" height="30" src="../../images/icon/1/1f/1f7a/1f7ada538a37a038d366a37c41cb96394de11636m" title="kamip" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/kamip" title="kamip">
+         kamip
+        </a>
+        :
+       </p>
+       <p class="comment">
+        スライダーが気になるの巻
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <!-- /#sectFavBy -->
+     </section>
+     <section class="group" id="sectTags">
+      <h1>
+       <img alt="Tags" height="18" src="../../img/code/ttl_code_tags.png" width="47"/>
+      </h1>
+      <ul class="listTag group">
+       <li>
+        <a class="tag " href="../../tag/3D" title="3D">
+         3D
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/Matrix3D" title="Matrix3D">
+         Matrix3D
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/Vector3D" title="Vector3D">
+         Vector3D
+        </a>
+       </li>
+      </ul>
+      <!-- / #sectTags .group -->
+     </section>
+     <section class="group" id="sectKeywords">
+      <h1>
+       <img alt="sectKeywords" height="19" src="../../img/code/ttl_code_keywords.png" width="98"/>
+      </h1>
+      <ul class="listKeywords group">
+       <li>
+        <a class="keyword keyword2" href="../../search?q=Math.pow" title="Math.pow | JavaScript,HTML5,CSS search">
+         Math.pow
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=lineTo" title="lineTo | JavaScript,HTML5,CSS search">
+         lineTo
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=Event.RESIZE" title="Event.RESIZE | JavaScript,HTML5,CSS search">
+         Event.RESIZE
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=Vector" title="Vector | JavaScript,HTML5,CSS search">
+         Vector
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=Vector3D.Y_AXIS" title="Vector3D.Y_AXIS | JavaScript,HTML5,CSS search">
+         Vector3D.Y_AXIS
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=Vector3D.X_AXIS" title="Vector3D.X_AXIS | JavaScript,HTML5,CSS search">
+         Vector3D.X_AXIS
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=clear" title="clear | JavaScript,HTML5,CSS search">
+         clear
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=Math.cos" title="Math.cos | JavaScript,HTML5,CSS search">
+         Math.cos
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=Math.PI" title="Math.PI | JavaScript,HTML5,CSS search">
+         Math.PI
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=Math.sin" title="Math.sin | JavaScript,HTML5,CSS search">
+         Math.sin
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=moveTo" title="moveTo | JavaScript,HTML5,CSS search">
+         moveTo
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=lineStyle" title="lineStyle | JavaScript,HTML5,CSS search">
+         lineStyle
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=Event" title="Event | JavaScript,HTML5,CSS search">
+         Event
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=Event.ENTER_FRAME" title="Event.ENTER_FRAME | JavaScript,HTML5,CSS search">
+         Event.ENTER_FRAME
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=int" title="int | JavaScript,HTML5,CSS search">
+         int
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=Number" title="Number | JavaScript,HTML5,CSS search">
+         Number
+        </a>
+       </li>
+      </ul>
+      <!-- / #sectKeywords .group -->
+     </section>
+     <div class="ad_super_bnr bnrAd btnT">
+      <div class="ad_super_bnr bnrAd btnT">
+       <!-- wonderfl_codepage_longbnr -->
+      </div>
+     </div>
+     <script src="../../js/lib/prototype-1.7.2.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/builder.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/effects.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/lightbox.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/swfobject.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/swfformfix2.js" type="text/javascript">
+     </script>
+     <script src="../../js/form_manager.js" type="text/javascript">
+     </script>
+     <script src="../../js/rpc_wrapper.js" type="text/javascript">
+     </script>
+     <script src="../../js/wonderfl.js" type="text/javascript">
+     </script>
+     <script type="text/javascript">
+      var viewer_swf      = "../../swf/WonderflViewer.swf";
+var open_api_key    = "a76b80051993a7c6322bf8b4bbc457b44c3d4f5c";
+var google_maps_key = "ABQIAAAAXpWFDG8Wm9YzscY4IEB27xSO5wqdqdHVqPB8sVJhBj86bhrVXRSBgqnsO9rxcctD5ppITaLzKCDqHA";
+var compiler_server = "";
+var compiler_port   = "";
+var code_uid        = "62jf";
+var swf_uri         = "../../swf/usercode/2/2a/2a4f/2a4fe6e8af0b0d8e9c3bce31eb2691cf409268ad.swf";
+var wmode           = "transparent";
+var ticket          = "";
+var is_login        = "0";
+var viewer          = {
+  displayName : "anonymous",
+  iconURL     : "http://wonderfl.net/img/common/img_user_anonymous.gif"
+};
+     </script>
+    </article>
+    <div id="diff_container">
+    </div>
+    <div id="diff_controller">
+     <a href="#" id="diff_close_button">
+      <img class="btn" src="../../img/code/close.gif"/>
+     </a>
+    </div>
+    <div id="popup" style="display:none">
+     <p class="btnClose">
+      <a href="javascript:void(0);" onclick="popup.hide();">
+       <img alt="close" height="23" src="../../img/nengafl2011/btn_close.png" width="23"/>
+      </a>
+     </p>
+     <form action="/api/code/flash2android/sendmail" id="sendmail" method="post" style="display:none">
+      <p class="ttlPopup">
+       <img alt="AndroidアプリのDownload URLを携帯へ送る" src="../../img/nengafl2011/ttl_download.png"/>
+      </p>
+      <p>
+       <input id="email" name="email" placeholder="メールアドレスを入力してください" type="input" value=""/>
+      </p>
+      <p class="btnSubmit">
+       <input alt="携帯に送る" src="../../img/nengafl2011/btn_send.png" type="image"/>
+      </p>
+      <input name="token" type="hidden" value="29fee1e8f0e2a58e12d683955555628754e40b1bbe752dc2cb7893b49da35aa3"/>
+      <input name="code_uid" type="hidden" value="62jf"/>
+     </form>
+     <p id="converting" style="display:block">
+      Converting...
+     </p>
+     <!-- /#popup -->
+    </div>
+    <!--/#content-->
+   </div>
+   <!--/[[[ CONTENT-AREA ]]]-->
+   <!--[[[ FOOTER-AREA ]]]-->
+   <div id="footerGlobal">
+    <p class="goPageTop">
+     <a href="#container">
+      <img alt="ページの先頭へ戻る" class="btn" height="32" src="../../img/common/btn/btn_backtotop.png" width="36"/>
+     </a>
+    </p>
+    <div id="navFooter">
+     <p class="navFooterTop">
+      <a href="../../" title="wonderfl TOP">
+       wonderfl TOP
+      </a>
+     </p>
+     <ul class="listNavFooter group">
+      <li>
+       <dl>
+        <dt>
+         <a href="../../codes" title="Codes">
+          Codes
+         </a>
+        </dt>
+        <dd>
+         <a href="../../codes" title="page view ranking">
+          page view ranking
+         </a>
+        </dd>
+        <dd>
+         <a href="../../codes?order=favorite" title="favorite ranking">
+          favorite ranking
+         </a>
+        </dd>
+        <dd>
+         <a href="../../codes?order=forked" title="forked count ranking">
+          forked count ranking
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../users" title="Users">
+          Users
+         </a>
+        </dt>
+        <dd>
+         <a href="../../users" title="page view ranking">
+          page view ranking
+         </a>
+        </dd>
+        <dd>
+         <a href="../../users?order=favorite" title="favorite ranking">
+          favorite ranking
+         </a>
+        </dd>
+        <dd>
+         <a href="../../users?order=forked" title="forked count ranking">
+          forked count ranking
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="http://flash-games.wonderfl.net/" title="Game">
+          Game
+         </a>
+        </dt>
+        <dd>
+         <a href="http://flash-games.wonderfl.net/about" title="フラッシュゲームをつくる">
+          make games
+         </a>
+        </dd>
+        <dd>
+         <a href="http://flash-games.wonderfl.net/" title="フラッシュゲームで遊ぶ">
+          play games
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../events" title="Game">
+          Events
+         </a>
+        </dt>
+        <dd>
+         <a href="http://jsdo.it/event/jam/" title="HTML5&amp;Flash">
+          JAM -HTML5&amp;Flash-
+         </a>
+        </dd>
+        <dd>
+         <a href="http://checkmate.wonderfl.net/" title="CHECKMATE">
+          CHECKMATE
+         </a>
+        </dd>
+        <dd>
+         <a href="http://nengafl.wonderfl.net/" title="nengafl">
+          nengafl
+         </a>
+        </dd>
+        <dd>
+         <a href="../../code/adce526f063149d781c2752e7472b08ad7279595" title="FeliCa Flash Contest">
+          FeliCa Flash Contest
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="http://flash-jobs.wonderfl.net/" title="flash-jobs">
+          Jobs
+         </a>
+        </dt>
+        <dd>
+         <a href="http://flash-jobs.wonderfl.net/" target="_blank" title="want a job?">
+          want a job?
+         </a>
+        </dd>
+        <dd>
+         <a href="http://flash-jobs.wonderfl.net/plan" target="_blank" title="post a job">
+          post a job
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../tags" title="Tags">
+          Tags
+         </a>
+        </dt>
+        <dd>
+         <a href="../../search">
+          Flash /
+          <br/>
+          Actionscript3.0
+          <br/>
+          keywords
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../qa" title="Q&amp;A">
+          Q&amp;A
+         </a>
+        </dt>
+        <dd>
+         <a href="../../qa#questions">
+          Questions
+          <br/>
+          about Flash /
+          <br/>
+          Actionscript3.0
+         </a>
+        </dd>
+       </dl>
+      </li>
+     </ul>
+     <ul class="listNavFooter group">
+      <li>
+       <dl>
+        <dt>
+         <a href="../../about/" title="about">
+          What is wonderfl
+         </a>
+        </dt>
+        <dd>
+         <a href="../../help" title="ヘルプ">
+          help
+         </a>
+        </dd>
+        <dd>
+         <a href="../../qa" title="Q&amp;A">
+          Q&amp;A
+         </a>
+        </dd>
+        <dd>
+         <a href="../../libraries" title="ライブラリ">
+          libraries
+         </a>
+        </dd>
+        <dd>
+         <a href="../../wiki" title="wiki">
+          wiki
+         </a>
+        </dd>
+        <dd>
+         <a href="../../apis" title="APIs">
+          APIs
+         </a>
+        </dd>
+        <dd>
+         <a href="../../media" title="Media">
+          Media Information
+         </a>
+        </dd>
+        <dd>
+         <a href="../../blog" title="developer's blog">
+          developer's blog
+         </a>
+        </dd>
+        <dd>
+         <a href="../../help#help_contact" title="contact">
+          contact
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../terms" title="利用規約">
+          Terms of Use
+         </a>
+        </dt>
+        <dd>
+         <a href="../../terms#terms_pp" title="プライバシーポリシー">
+          Privacy Policy
+         </a>
+        </dd>
+       </dl>
+      </li>
+     </ul>
+     <!--/#navFooter-->
+    </div>
+    <dl id="kayacFooter">
+     <dt class="ttlKayacService">
+      <a href="http://www.kayac.com" title="株式会社KAYAC（カヤック）古都鎌倉から新しい価値感のサービスを次々にリリースする面白法人">
+       <img alt="KAYAC Project" height="14" src="../../img/common/kayacproject.png" width="56"/>
+      </a>
+     </dt>
+     <dd class="listKayacService">
+      <div id="boxKayacLink">
+       <div class="unitKayacLink" id="kayacProject">
+        <dl>
+         <dt>
+          <a class="external" href="http://www.kayac.com/" rel="external" title="面白法人カヤック">
+           カヤックプロジェクト
+          </a>
+         </dt>
+         <dd>
+          <ul class="group">
+           <li>
+            <a class="external" href="https://web.lobi.co/" rel="external" title="Lobi">
+             Lobi
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://lobi.co/recsdk" rel="external" title="Lobi REC SDK">
+             Lobi REC SDK
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://rankers.co/" rel="external" title="RANKERS">
+             RANKERS
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://koshien-pocket.kayac.com/" rel="external" title="ぼくらの甲子園！ポケット">
+             ぼくらの甲子園！ポケット
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://games.kayac.com/pf/" rel="external" title="ポケットフットボーラーPLUS">
+             ポケットフットボーラーPLUS
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://quikin.kayac.com/" rel="external" title="冒険クイズキングダム">
+             冒険クイズキングダム
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://jagmo.jp/" rel="external" title="JAGMO">
+             JAGMO
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://pla-cole.wedding/" rel="external" title="プラコレ">
+             プラコレ
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://iikuni-kamakura.jp/" rel="external" title="iikuni">
+             iikuni
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://thanks.kayac.com/ja/top" rel="external" title="THANKS">
+             THANKS
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://sumika.me/" rel="external" title="SuMiKa">
+             SuMiKa
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://www.kayac.com/service/strongpoint" rel="external" title="キャンペーン">
+             キャンペーン
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://www.kayac.com/service/strongpoint" rel="external" title="受託">
+             受託
+            </a>
+           </li>
+          </ul>
+         </dd>
+        </dl>
+        <!-- / #kayacProject -->
+       </div>
+       <div class="unitKayacLink" id="kayacMedia">
+        <dl>
+         <dt>
+          KAYAC Media
+         </dt>
+         <dd>
+          <ul class="group">
+           <li>
+            <a class="external" href="http://techblog.kayac.com/" rel="external" title="面白法人プログラマーブログ">
+             面白法人プログラマーブログ
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://business.nikkeibp.co.jp/article/opinion/20111227/225722/?rt=nocnt" rel="external" title="面白法人社長ブログ">
+             面白法人社長ブログ
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://www.facebook.com/KayacJapan" rel="external" title="面白法人カヤックの「ここだけの話」">
+             面白法人カヤックの「ここだけの話」
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://design.kayac.com" rel="external" title="面白法人デザイナーブログ">
+             面白法人デザイナーブログ
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://twitter.com/yanasawa" rel="external" title="@yanasawa">
+             @yanasawa
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://create.kayac.com" rel="external" title="つくってみたラボ">
+             つくってみたラボ
+            </a>
+           </li>
+          </ul>
+         </dd>
+        </dl>
+        <!-- / #kayacMedia -->
+       </div>
+       <!-- / #boxKayacLink -->
+      </div>
+     </dd>
+    </dl>
+    <p class="vcard" id="copyright">
+     <small>
+      site design ©
+      <a class="external fn org url" href="http://www.kayac.com/" title="KAYAC Inc.">
+       KAYAC Inc.
+      </a>
+      All Rights Reserved.
+     </small>
+    </p>
+    <!--/#footer-->
+   </div>
+   <!--/[[[ FOOTER-AREA ]]]-->
+   <!--/#container-->
+  </div>
+  <!-- scripts [-->
+  <script src="../../js/lib/sisso.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   var swf_server = "http://swf.wonderfl.net";
+var lang = "ja";
+  </script>
+  <!--] scripts-->
+  <!-- Analytics [-->
+  <!--] Analytics-->
+ </body>
+</html>
