@@ -150,7 +150,7 @@ def get_code_page(url):
         try:
             f.write(raw)
         except UnicodeEncodeError:
-           -f.write(raw.encode('utf-8'))
+            f.write(raw.encode('utf-8'))
 
 
 if __name__ == '__main__':
