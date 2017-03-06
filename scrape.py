@@ -105,12 +105,15 @@ def get_user(user):
     rewrite_abs_urls(soup, '../../../')
 
     mkdir_p('wonderfl.net/user/%s/codes' % user)
-    with open('wonderfl.net/user/%s/codes/index.html' % user, 'wb') as f:
-        raw = soup.prettify('utf-8')
+    with open('wonderfl.net/user/%s/codes/index.html' % user, 'w') as f:
+        raw = soup.prettify()
         raw = raw.replace('http://swf.wonderfl.net/', '../../')
         raw = re.sub(r'\?\d{10}', '', raw)
         raw = raw.replace('"/swf/WonderflViewer', '"../../swf/WonderflViewer')
-        f.write(raw)
+        try:
+            f.write(raw)
+        except UnicodeEncodeError:
+            f.write(raw.encode('utf-8'))
 
     return urls
 
@@ -139,12 +142,15 @@ def get_code_page(url):
 
     rewrite_abs_urls(soup, '../../')
 
-    with open('wonderfl.net/c/%s/index.html' % id, 'wb') as f:
-        raw = soup.prettify('utf-8')
+    with open('wonderfl.net/c/%s/index.html' % id, 'w') as f:
+        raw = soup.prettify()
         raw = raw.replace('http://swf.wonderfl.net/', '../../')
         raw = re.sub(r'\?\d{10}', '', raw)
         raw = raw.replace('"/swf/WonderflViewer', '"../../swf/WonderflViewer')
-        f.write(raw)
+        try:
+            f.write(raw)
+        except UnicodeEncodeError:
+            f.write(raw.encode('utf-8'))
 
 
 if __name__ == '__main__':
