@@ -85,7 +85,7 @@ def get_user(user):
         response = requests.get('http://wonderfl.net/user/%s/codes?page=%d' % (user, page), headers=headers)
         if index_template is None:
             index_template = response.text
-        soup = BeautifulSoup(response.text, 'lxml')
+        soup = BeautifulSoup(response.text, 'html5lib')
         codes = soup.select('.unitCode')
         if len(codes) is 0:
             break
@@ -95,7 +95,7 @@ def get_user(user):
 
     urls = [x.select_one('.ttl a')['href'] for x in all_unit_codes]
 
-    soup = BeautifulSoup(index_template, 'lxml')
+    soup = BeautifulSoup(index_template, 'html5lib')
 
     group = soup.select_one('.unitCodeGroup')
     group.clear()
@@ -128,7 +128,7 @@ def get_code_page(url):
 
     response = requests.get(url, headers={'accept-language': 'ja'})
 
-    soup = BeautifulSoup(response.text, 'lxml')
+    soup = BeautifulSoup(response.text, 'html5lib')
     swf_url = soup.find(content=re.compile('http:\/\/swf\.wonderfl\.net\/swf'))['content']
     swf_path = swf_url[24:]
     swf_dir = os.path.dirname(swf_path)
