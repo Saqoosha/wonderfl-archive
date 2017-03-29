@@ -1200,6 +1200,15 @@ Wonderfl.Codepage = new function() {
 
             // talk
             this.init_talk();
+
+            // override 'Preview Fullscreen' link
+            var swfFullscreenLinks = $$(".codeswf .btnFullScreen a")
+            if (swfFullscreenLinks.length === 1) {
+              swfFullscreenLinks[0].on('click', function(e) {
+                e.preventDefault()
+                Wonderfl.Codepage.fullscreen()
+              })
+            }
         },
         reload_swf : function() {
             this.play();
@@ -1216,6 +1225,18 @@ Wonderfl.Codepage = new function() {
             if ( Wonderfl.Codepage.reload_button ) {
                 Wonderfl.Codepage.reload_button.show();
             }
+        },
+        fullscreen : function() {
+            Wonderfl.Codepage.play();
+
+            var swf = document.getElementById('externalFlashContent')
+            swf.setAttribute('width', '100%')
+            swf.setAttribute('height', '100%')
+
+            var body = document.body
+            body.classList.add('fullscreen');
+            body.appendChild(document.getElementById('swf_container'))
+            body.removeChild(document.getElementById('container'))
         },
         add_button_listeners : function() {
             this.play_button   = $('btnPlay');
